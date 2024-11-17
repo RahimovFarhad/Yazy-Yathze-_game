@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding-top: 0.3vh;
+    background-color: orange;
+}
+button:hover, a:hover{
+    cursor: pointer;
+}
+img{
+    transition: opacity 0.5s ease;
+}
+.score-board{
+    position: absolute;
+    right: 200px;
+    top: 200px;
+}
+.container{
+    width: 38%;
+    height: 99.5vh;
+    background-color: rgb(70, 69, 69);
+    border-radius: 15px;
+    padding-top: 12px;
+    margin: 0 auto;
+}
+.result-board{
+    height: 80%;
+    width: 95%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    
+    margin: 0 auto;
+    padding: 2px;
+
+    border-radius: 5px;
+    background-color: white;
+    
+
+
+}
+.criteria{
+    background-color: #FBDDA8;
+    margin: 3px;
+    padding: 1px 5px 0px;
+}
+.criteria img{
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    border-radius: 10px;
+}
+.withFigure{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    padding-left: 10px ;
+}
+.withFigure img{
+    height: 24px!important;
+    background-color: transparent!important;
+    border-radius: 0!important;
+
+}
+.player-F{
+    background-color: #FCB08A;
+    margin: 3px;
+}
+.player-N{
+    background-color:#6BE4FB;
+    margin: 3px;
+}
+.player-F button, .player-N button{
+    height: 100%;
+    width: 100%;
+    background-color: #FD5E57;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bold;
+}
+.player-N button{
+    background-color: #00C2F0;
+}
+.off-button{
+    border: 0!important;
+    background-color: transparent!important;
+    cursor: auto!important;
+    color: transparent!important;
+}
+.used-button{
+    border: 0!important;
+    background-color: transparent!important;
+    cursor: auto!important;
+    color: black!important;
+}
+.dice-container{
+    display: flex;
+    height: 7%;
+    margin: 20px 0;
+    justify-content: space-evenly;
+}
+.dice{
+    width: 10%;
+    border-radius: 10px;
+    border: 0;
+    background-color: #313640;
+
+}
+.dice img{
+    height: 60px;
+    background-color: white;
+    border-radius: 12px;
+}
+.dice button{
+    background-color: transparent;
+    border: 0;
+    transition: background-color 1s ease;
+}
+.dice button.selected{
+    border: 2px solid greenyellow;
+
+}
+.button-container{
+    display: flex;
+    height: 6.5%;
+    justify-content: center;
+}
+.roll-button{
+    width: 85%;
+
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #cf453e;
+    padding: 0;
+    
+
+    border: 0;
+    border-radius: 10px;
+
+    transition: background-color 0.3s ease;
+}
+
+.roll-button:hover{
+    background-color: #cf453ed8;
+}
+
+.roll-button:active{
+    background-color: #cf453e74;
+}
+
+.N{
+    background-color: #267ECA;
+}
+
+.N:hover{
+    background-color: #267dcadf;
+}
+.N:active{
+    background-color: #267dca7e;
+}
+
